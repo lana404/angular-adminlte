@@ -7,18 +7,20 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContentModule } from './content/content.module';
+import { ContentRoutingModule } from './content/content-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
     NavbarComponent,
-    FooterComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ContentModule
+    ContentModule,
+    ContentRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

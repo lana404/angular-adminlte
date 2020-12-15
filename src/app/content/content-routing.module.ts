@@ -5,7 +5,8 @@ import { Dashboard2Component } from './dashboard2/dashboard2.component';
 
 const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
-  { path: 'dashboard2', component: Dashboard2Component }
+  { path: 'dashboard2', component: Dashboard2Component },
+  { path: '', redirectTo: 'dashboard', pathMatch: 'prefix'}
 ];
 
 @NgModule({
